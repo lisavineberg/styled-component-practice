@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import styled from "styled-components";
 
 const StyledH2 = styled.h2`
@@ -6,14 +5,10 @@ const StyledH2 = styled.h2`
     font-weight: 400;
     line-height: 1.125;
     margin: 0 0 1.25rem;
-    text-align: ${props => props.textAlign == "center" ? "center" : "left"};
+    text-align: ${props => props.textAlign === "center" ? "center" : "left"};
 `
 
 class H2 extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <StyledH2 textAlign={this.props.textAlign}>{this.props.text}</StyledH2>

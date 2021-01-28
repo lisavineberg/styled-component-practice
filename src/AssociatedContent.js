@@ -42,7 +42,7 @@ function AssociatedContent() {
                     <H3>{item.title}</H3>
                     <List>
                         {item.items.map((listItem, index) => <ListItem key={index} value={listItem}></ListItem>)}
-                        {item.viewAll ? <ListItem key="viewAll" value={item.viewAll}></ListItem> : ""}
+                        {item.viewAll ? <ListItem key="viewAll" value={item.viewAll} textTransform="uppercase"></ListItem> : ""}
                     </List>
                 </div>
             )}
